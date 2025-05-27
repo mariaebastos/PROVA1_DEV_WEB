@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martinho Lutero</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header, footer {
+      background-color: #28412d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      min-height: 80vh;
+    }
+    nav {
+      background-color: #d3e096;
+      flex: 30%;
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin-bottom: 10px;
+    }
+    section {
+      background-color: #fff6f0;
+      flex: 70%;
+      padding: 1rem;
+    }
+    section img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 1rem auto;
+    }
+    @media (max-width: 400px) {
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Martinho Lutero</h1>
+  </header>
+  
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#">Introdução</a></li>
+        <li><a href="#">A Reforma</a></li>
+        <li><a href="#">95 Teses</a></li>
+        <li><a href="#">Reforma Protestante</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Introdução</h2>
+      <p>Martinho Lutero foi um teólogo e monge alemão que iniciou a Reforma Protestante no século XVI.
+         Suas ideias mudaram profundamente a história do cristianismo na Europa.</p>
+
+      <img src="https://static.todamateria.com.br/upload/lu/te/luteromartinho-cke.jpg" alt="Martinho Lutero">
+
+      <h2>A Reforma</h2>
+      <p>Em 1517, Lutero publicou suas 95 teses, criticando práticas da Igreja Católica como a venda de indulgências. 
+         Esse ato é considerado o marco inicial da Reforma Protestante.</p>
+
+      <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2017/10/31/lutero-divulgacao.jpg" alt="95 Teses de Lutero">
+    </section>
+  </main>
+
+  <footer>
+    <p>eduarda_bastos@ufc.br</p>
+    <p>2025.1 - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
