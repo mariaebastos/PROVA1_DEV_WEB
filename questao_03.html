@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokemon</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    img {
+      width: 200px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img id="pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Pokémon">
+  <div>
+    <button onclick="changePokemon(-1)">Voltar -1</button>
+    <button onclick="changePokemon(1)">Adiantar +1</button>
+  </div>
+  <script>
+    let currentId = 1;
+    function changePokemon(n) {
+      const newId = currentId + n;
+      if (newId > 0 && newId <=100) {
+        currentId = newId;
+        document.getElementById('pokemon').src =
+          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${currentId}.svg`;
+      }
+    }
+  </script>
+</body>
+  </html>
+

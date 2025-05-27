@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ser ou não ser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+    .notification-card {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 250px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-header {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div style="height: 1500px;">
+    <p>Ser ou não ser, eis a questão:
+        Será mais nobre em nosso espírito sofrer
+        Pedradas e flechas com que a sorte, feroz, nos alveja,
+        Ou insurgir-nos contra um mar de provocações
+        E em luta pôr-lhes fim? Morrer... dormir:
+        Nada mais. E com o sono — dizem — extinguir
+        As angústias do coração e os mil choques
+        Naturais da carne — é solução
+        Devotamente a desejar. Morrer... dormir...
+        Dormir! Talvez sonhar — eis o problema:
+        Pois nesse sono da morte que sonhos sobrevirão
+        Quando tivermos escapado ao tumulto vital,
+        Deve deter-nos: essa é a reflexão
+        Que dá calamidade a tão longa vida.
+        Pois quem suportaria os açoites e escárnios do tempo,
+        A injustiça do opressor, a afronta do soberbo,
+        As dores do amor desprezado, a demora da lei,
+        A insolência do poder e os ultrajes
+        Que o mérito paciente recebe dos indignos,
+        Quando ele próprio poderia encontrar repouso
+        Com a ponta de um punhal? Quem desejaria fardos
+        Gemendo e suando sob o peso da vida,
+        Não fosse o temor de algo após a morte —
+        O país desconhecido de cujos confins
+        Nenhum viajante retorna —, a nos confundir a vontade,
+        Fazendo-nos preferir os males que temos
+        A fugirmos para outros que ignoramos?
+        Assim, a consciência nos torna covardes,
+        E assim, a cor nativa da decisão
+        Empalidece sob a pálida sombra do pensamento,
+        E empresas de grande vulto e importância
+        Por esse respeito desviam seu curso
+        E perdem o nome de ação..
+        Ser ou não ser, eis a questão:
+        Será mais nobre em nosso espírito sofrer
+        Pedradas e flechas com que a sorte, feroz, nos alveja,
+        Ou insurgir-nos contra um mar de provocações
+        E em luta pôr-lhes fim? Morrer... dormir:
+        Nada mais. E com o sono — dizem — extinguir
+        As angústias do coração e os mil choques
+        Naturais da carne — é solução
+        Devotamente a desejar. Morrer... dormir...
+        Dormir! Talvez sonhar — eis o problema:
+        Pois nesse sono da morte que sonhos sobrevirão
+        Quando tivermos escapado ao tumulto vital,
+        Deve deter-nos: essa é a reflexão
+        Que dá calamidade a tão longa vida.
+        Pois quem suportaria os açoites e escárnios do tempo,
+        A injustiça do opressor, a afronta do soberbo,
+        As dores do amor desprezado, a demora da lei,
+        A insolência do poder e os ultrajes
+        Que o mérito paciente recebe dos indignos,
+        Quando ele próprio poderia encontrar repouso
+        Com a ponta de um punhal? Quem desejaria fardos
+        Gemendo e suando sob o peso da vida,
+        Não fosse o temor de algo após a morte —
+        O país desconhecido de cujos confins
+    
+      </p>
+  </div>
+
+  <div class="notification-card" id="card">
+    <div class="card-header">
+      <button class="close-btn" onclick="document.getElementById('card').style.display='none'">X</button>
+    </div>
+    <div class="card-content">
+      <h3>Novidade!</h3>
+      <p>Confira nossos novos produtos.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
